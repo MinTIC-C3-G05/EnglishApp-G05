@@ -3,7 +3,7 @@
 * {
     margin: 1%;
     padding: 1%;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
-    max-width: 600px
+    max-width: 600px;
 }
 
 .container-question {
@@ -33,28 +33,28 @@ body {
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
-    max-width: 600px
+    max-width: 600px;
 }
 
 .container-fluid>p {
-    font-size: 32px
+    font-size: 32px;
 }
 
 .question {
     width: 90%;
-    text-align: justify
+    text-align: justify;
 }
 
 .options {
     position: relative;
-    padding-left: 40px
+    padding-left: 40px;
 }
 
 #options label {
     display: block;
     margin-bottom: 15px;
     font-size: 14px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .options input {
@@ -69,7 +69,7 @@ body {
     width: 25px;
     background-color: rgb(255, 255, 255);
     border: 1px solid #ddd;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .options input:checked~.checkmark:after {
@@ -87,37 +87,37 @@ body {
     left: 50%;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: 300ms ease-in-out 0s
+    transition: 300ms ease-in-out 0s;
 }
 
 .options input[type="radio"]:checked~.checkmark {
     background: #ffffff;
-    transition: 300ms ease-in-out 0s
+    transition: 300ms ease-in-out 0s;
 }
 
 .options input[type="radio"]:checked~.checkmark:after {
-    transform: translate(-50%, -50%) scale(1)
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .btn-primary {
     background-color: rgb(208, 237, 243);
     color: rgb(0, 0, 0);
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
 }
 
 .btn-primary:hover {
     background-color: #21bf73;
-    border: 1px solid #21bf73
+    border: 1px solid #21bf73;
 }
 
 .btn-success {
     padding: 5px 25px;
-    background-color: #088216
+    background-color: #088216;
 }
 
 @media(max-width:576px) {
     .question {
         width: 100%;
-        word-spacing: 2px
+        word-spacing: 2px;
     }
 }
