@@ -12,219 +12,69 @@
 </head>
 
 <header>
-<h1 class="text-center">English Level Test</h1>
+    <h1 class="text-center">English Level Test</h1>
 </header>
 
 <body>
-    <p class="pIntro">Choose the best word (or phrase) to complete the sentence.</p>
-<br>
-    <div class="container-fluid">
-        <div class="container-question">
-            <div class="question ml-sm-5 pl-sm-5 pt-2">
-                <div class= "h6"><b>The baby boy saw ___ in the mirror and started to cry.</b></div>
+
+<div id="ANS">
+    <div v-for="(instruction,index) of questions" v-show="index === questionIndex">
+        <div class="pIntro"><b>{{instruction.instructions}}</b></div>
+        <div class="container-fluid" v-for="(question,index) of questions" v-show="index === questionIndex">
+            <div class="container-question">
+                <div class="question ml-sm-5 pl-sm-5 pt-2">
+                    <div class= "h6"><b>{{question.textQ}}</b></div>
+                </div>
             </div>
+        <br>
+                <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options" v-for="response of question.responses" v-show="index === questionIndex">
+                    <label class="options">
+                        <input type="radio" v-bind:value="response.correct" v-name="index" v-model="userResponses[index]"/>{{response.text}}
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
         </div>
-            <br>
-                <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                    <label class="options">itself
-                        <input type="radio" name="exampleForm" id="radioExample1_1" />
-                        <span class="checkmark"></span>
-                        </label>
-                    <label class="options">himself
-                        <input type="radio" name="exampleForm" id="radioExample1_2" />
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="options">herself
-                        <input type="radio" name="exampleForm" id="radioExample1_3" />
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                </div>
-            </div>
-<br>
-    <div class="container-fluid">
-        <div class="container-question">
-            <div class="question ml-sm-5 pl-sm-5 pt-2">
-                <div class= "h6"><b>Firstly, I want to congratulate you all. Secondly, I would like to wish you good luck and ___ I hope you have enjoyed the course.</b></div>
-            </div>
-        </div>
-            <br>
-                <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                    <label class="options">finally
-                        <input type="radio" name="exampleForm2" id="radioExample2_1" />
-                        <span class="checkmark"></span>
-                        </label>
-                    <label class="options">at last
-                        <input type="radio" name="exampleForm2" id="radioExample2_2" />
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="options">in the end
-                        <input type="radio" name="exampleForm2" id="radioExample2_3" />
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                </div>
-            </div>
-<br>
-    <div class="container-fluid">
-        <div class="container-question">
-            <div class="question ml-sm-5 pl-sm-5 pt-2">
-                <div class= "h6"><b>You ___ clean your teeth twice a day to avoid having problems.</b></div>
-            </div>
-        </div>
-            <br>
-                <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                    <label class="options">can
-                        <input type="radio" name="exampleForm3" id="radioExample3_1" />
-                        <span class="checkmark"></span>
-                        </label>
-                    <label class="options">shoud
-                        <input type="radio" name="exampleForm3" id="radioExample3_2" />
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="options">will
-                        <input type="radio" name="exampleForm3" id="radioExample3_3" />
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                </div>
-            </div>
-<br>
-<br>
-    <p class="pIntro">Choose the best word (or phrase) to complete the dialogue.</p>
-<br>
-    <div class="container-fluid">
-        <div class="container-question">
-            <div class="question ml-sm-5 pl-sm-5 pt-2">
-                <div class= "h6"><b>Jack: I think it’s going to rain.<br>
-                    Jill: I ___ , the clouds are clearing.<br>
-                    Jack: We’ll soon see.</b></div>
-            </div>
-        </div>
-            <br>
-                <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                    <label class="options">disagree
-                        <input type="radio" name="exampleForm4" id="radioExample4_1" />
-                        <span class="checkmark"></span>
-                        </label>
-                    <label class="options">complain
-                        <input type="radio" name="exampleForm4" id="radioExample4_2" />
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="options">argue
-                        <input type="radio" name="exampleForm4" id="radioExample4_3" />
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                </div>
-            </div>
-<br>
-    <div class="container-fluid">
-        <div class="container-question">
-            <div class="question ml-sm-5 pl-sm-5 pt-2">
-                <div class= "h6"><b>Anne: Oh! I watched the new TV show last night.<br>
-                    Jo: Was it any good?<br>
-                    Anne: Yes. ___ the TV set is so old I could see very little.</b></div>
-            </div>
-        </div>
-            <br>
-                <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                    <label class="options">Mind you
-                        <input type="radio" name="exampleForm5" id="radioExample5_1" />
-                        <span class="checkmark"></span>
-                        </label>
-                    <label class="options">By the way
-                        <input type="radio" name="exampleForm5" id="radioExample5_2" />
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="options">Still
-                        <input type="radio" name="exampleForm5" id="radioExample5_3" />
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                </div>
-            </div>
-<br>
+    </div>
+        <br>
         <div class="d-flex justify-content-around pt-3">
-            <div id="prev"><button type="button" disabled class="btn btn-primary">Previous</button></div>
-            <div class="h5 mt-3"><i>(1/2)</i></div>
-            <div id="next"><button type="button" Onclick="location.href='EnglishLevelTest_p2.html'" class="btn btn-primary">Next</button></div>
+            <div id="prev"><button type="button" name="exampleForm" class="btn btn-primary" v-bind:class="[questionIndex===0? 'disabled' : 'enabled']" v-if="questionIndex <= [questions.length-1]" v-on:click="previous">Previous</button></div>
+            <div class="h5 mt-3" v-show="questionIndex <= [questions.length-1]"><i>({{questionIndex+1}}/{{questions.length}})</i></div>
+            <div>
+            <div id="next"><button type="button" class="btn btn-primary" v-if="questionIndex < [questions.length-1]" v-on:click="next">Next</button></div>
+            <div id="submit"><button type="button" class="btn btn-primary" v-if="questionIndex == [questions.length-1]" v-on:click="next">Submit</button></div></div>
         </div>
-        </div>
+        <div class="h3 text-center" v-show="questionIndex === questions.length">
+            <b>Test finished</b> <br><br>
+            <div class="container-fluid">
+                <div class="container-question">
+                    <div class="question ml-sm-5 pl-sm-5 pt-2 h4 text-center">
+                    Total score: {{ score() }} / {{ questions.length }} <br><br>
+                    You got {{score()*100/questions.length}}% correct answers!<br><br><br>
+                    Your English level is {{level()}}<br><br><br>
+                    <div class="d-flex justify-content-around pt-3">
+                    <div id="tests"><button type="button" Onclick="location.href='examenrecomendado.html'" class="btn btn-primary btn-lg">Recommended tests</button></div>
+                    <div id="material"><button type="button" Onclick="location.href='recursos.html'" class="btn btn-success btn-lg">Start learning!</button></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="javascript/javascript.js"></script>
+    
 </body>
 
-<!-- FOOTER -->
-   
-      <!-- FOOTER -->  
-      <footer class="text-center text-white" style="background-color: #f1f1f1;">
-        <!-- Grid container -->
-        <div class="container pt-4">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-            <!-- Facebook -->
-            <a
-                class="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="#!"
-                role="button"
-                data-mdb-ripple-color="dark"
-                ><i class="fa fa-facebook-f"></i
-            ></a>
-          
-            <!-- Twitter -->
-            <a
-                class="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="#!"
-                role="button"
-                data-mdb-ripple-color="dark"
-                ><i class="fa fa-twitter"></i
-            ></a>
-          
-            <!-- Google -->
-            <a
-                class="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="#!"
-                role="button"
-                data-mdb-ripple-color="dark"
-                ><i class="fa fa-google"></i
-            ></a>
-          
-            <!-- Instagram -->
-            <a
-                class="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="#!"
-                role="button"
-                data-mdb-ripple-color="dark"
-                ><i class="fa fa-instagram"></i
-            ></a>
-          
-            <!-- Linkedin -->
-            <a
-                class="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="#!"
-                role="button"
-                data-mdb-ripple-color="dark"
-                ><i class="fa fa-linkedin"></i
-            ></a>
-            <!-- Github -->
-            <a
-                class="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="#!"
-                role="button"
-                data-mdb-ripple-color="dark"
-                ><i class="fa fa-github"></i
-            ></a>
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-          
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 :
-            <a class="text-dark" href="/">EnglishApp</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-        <!-- END FOOTER --> 
+<!-- FOOTER -->  
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+<!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 :
+        <a class="text-dark" href="/">EnglishApp</a>
+    </div>
+<!-- Copyright -->
+</footer>
+<!-- END FOOTER --> 
 
 </html>
