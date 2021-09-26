@@ -1,0 +1,149 @@
+*{
+    
+    justify-content: center;
+    background-color: #1A1D53;
+}
+.navigation{
+  background-color: #20867D;
+  width: 20%;
+  text-align: center;
+}
+.navigation :hover{
+    color:#1A1D53;
+    font-size: 25px;
+    transition: 0.5s;
+
+}
+
+
+
+.navigation a{
+    background-color:#20867D;
+    border-radius: 15px;
+    padding: 30px;
+    float: left;
+    margin-top: 10%;
+    margin-right: 20px;
+    margin-left: 12%;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+
+}
+
+.iconos{
+    height: 30px; 
+    background-color: #20867D; 
+    align-self:auto; 
+}
+
+
+
+/* GENERAL CONTAINER */
+
+.general-container{
+    background-color: #20867D;
+    padding: 30px;
+    width: 35%;
+    margin: auto;
+    border-radius: 60px;
+}
+.welcomeBack-container{
+    background-color: white;
+    align-items: center;
+    padding: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.welcomeBack{
+    background-color:white;
+    text-align: center;
+    border-radius: 10px;
+}
+.form{
+    background-color: white;
+}
+.inputs{
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.input-login{
+    background-color: rgb(241, 236, 236);
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+}
+
+.input-login:hover{
+   background-color: #20867d52;
+   transition: 0.5s;
+}
+
+.login-button{
+    background-color: #1A1D53;
+    border-radius: 8px;
+    width: 30%;
+    height: 60px;
+    padding: 2px;
+}
+
+.login-button:hover{
+    font-size: large;
+    transition: 0.5s;
+}
+
+.google{
+    background-color: #1A1D53;
+    margin-top: 15px;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-bottom: 25px;
+}
+.sign-up{
+    background-color: white;
+    text-align: center;
+    padding: 4%;
+    margin: 5%;
+    border-radius: 15px;
+    box-shadow: 5px 10px #888888;
+}
+.sign-up button:hover{
+    padding: 5px;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 900px) {
+    .general-container{
+        width: 50%;
+        background-color:#20867D;
+    }
+}
+@media screen and (max-width: 680px) {
+    .general-container{
+        width: 90%;
+        background-color:#20867D;
+    }
+    .navigation{
+        
+        width: 100%;
+        display: inline-block;
+        margin: 1px;
+        height: 10%;
+        padding: 1px;
+        align-items:center;
+        height: 6%;
+        background-color:#1A1D53;
+
+    }
+    .navigation a{
+        margin: 1px;
+        text-align: center;
+        margin-left: 25px;
+        
+    }
+}
