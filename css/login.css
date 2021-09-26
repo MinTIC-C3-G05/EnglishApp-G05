@@ -37,10 +37,14 @@
     align-self:auto; 
 }
 
+
+
+/* GENERAL CONTAINER */
+
 .general-container{
     background-color: #20867D;
     padding: 30px;
-    width: 30%;
+    width: 35%;
     margin: auto;
     border-radius: 60px;
 }
@@ -110,4 +114,36 @@
 .sign-up button:hover{
     padding: 5px;
     transition: 0.5s;
+}
+
+
+@media screen and (max-width: 900px) {
+    .general-container{
+        width: 50%;
+        background-color:#20867D;
+    }
+}
+@media screen and (max-width: 680px) {
+    .general-container{
+        width: 90%;
+        background-color:#20867D;
+    }
+    .navigation{
+        
+        width: 100%;
+        display: inline-block;
+        margin: 1px;
+        height: 10%;
+        padding: 1px;
+        align-items:center;
+        height: 6%;
+        background-color:#1A1D53;
+
+    }
+    .navigation a{
+        margin: 1px;
+        text-align: center;
+        margin-left: 25px;
+        
+    }
 }
