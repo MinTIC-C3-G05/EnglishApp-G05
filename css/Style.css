@@ -28,6 +28,10 @@
       padding: 20px;
       
 }
+
+#body{
+    background-color: rgb(42, 131, 123) ;
+}
 /*=======================================================
                     SECCION 1
 ==========================================================*/
@@ -125,8 +129,90 @@ header center p{
     background: rgba(255,0,100,1);  
 }
 
+#boton{
+    background: linear-gradient(to right, rgb(113, 170, 162),rgb(4, 4, 112) );
+    color: aliceblue;
+    height: 40px;
+    width: 90px;
+}
+
+#contenedor1{
+    background-color: white;
+    height: 200px;
+}
+
+#cajata {
+    border-width: 5px;
+    height: 200px;
+    width: 800px;
+}
+
+#cajati2 {
+    background: #aaa;
+    border-width: 5px;
+    height: 200px;
+    width: 1900px;
+    
+}
+
+#imagen{
+    float: right;
+    margin-top: -60px;
+    margin-right: 70px;
+}
 
 
+
+
+#contenedormayor {
+    background-color: rgb(42, 131, 123);
+    height: 400px;
+    margin-top: -30px;
+  }
+
+  #contenedor {
+    background-color: rgb(42, 131, 123);
+    height: 400px;
+    width: 650px;
+    margin-top: -30px;
+    margin: auto;
+    float: left;
+  }
+  #cajon1 {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    float: left;
+    margin-top: 45px;
+    margin-left: 40px;
+    padding: 30px;
+  }
+  
+  #contenedor3 {
+    background-color: rgb(42, 131, 123);
+    height: 400px;
+    width: 650px;
+    margin-top: -30px;
+    float: right;
+  }
+  #cajon2 {
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    float: right;
+    margin-top: 60px;
+    margin-right: 40px;
+    padding: 30px;
+  }
+
+  #nombre {
+    width: 600px;
+}
+
+
+  
 /* ADMINISTRANDO PUNTOS DE QUIEBRE PARA ACOMODAR A LA PANTALLA REQUERIDA*/
 /*============================================================================= 
 PANTALLA DE ESCRITORIO - LARGE (lg)                                              
