@@ -1,0 +1,21 @@
+.EnglishTest{
+    padding: 10px;
+    font-size: 50px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.411);
+    
+}
+.foto{
+    text-align: center;
+    margin-left: 40px;
+    padding: 30px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.411);
+    
+}
+
+
+@media screen and (max-width: 1000px){
+    .EnglishTest{
+        background-color:#20867D;
+        font-size: 25px;
+    }
+}
