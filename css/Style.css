@@ -133,7 +133,7 @@ header center p{
     background: linear-gradient(to right, rgb(113, 170, 162),rgb(4, 4, 112) );
     color: aliceblue;
     height: 40px;
-    width: 90px;
+    width: 110px;
 }
 
 #contenedor1{
@@ -199,10 +199,10 @@ header center p{
   #cajon2 {
     background-color: white;
     width: 400px;
-    height: 250px;
+    height: 280px;
     margin: auto;
     float: right;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-right: 40px;
     padding: 30px;
   }
