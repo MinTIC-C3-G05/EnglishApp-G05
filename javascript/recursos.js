@@ -4,11 +4,11 @@
 ///let videoSRC;
 console.log("hello");
 
-let videos = ['https://www.youtube.com/embed/1j7AmQEYSFo',
+let videos = ['https://www.youtube.com/embed/jaxgeXPgAz0',
  'https://www.youtube.com/embed/lX6JcybgDFo', 
- 'https://www.youtube.com/embed/TGI4oz1QnZo', 
- 'https://www.youtube.com/embed/IbWOQWw1wkM',
- 'https://www.youtube.com/embed/fzew3PgeCj0', 
+ 'https://www.youtube.com/embed/D6_qpaSxAQc', 
+ 'https://www.youtube.com/embed/5v-wyR5emRw',
+ 'https://www.youtube.com/embed/saTZ6TRS_HE', 
  'https://www.youtube.com/embed/Y486eiRm1q8', 
  'https://www.youtube.com/embed/ztrtZ0en8dw',
  'https://www.youtube.com/embed/iYwI3hzaXTM', 
@@ -16,7 +16,16 @@ let videos = ['https://www.youtube.com/embed/1j7AmQEYSFo',
  'https://www.youtube.com/embed/Foy3PBmQKks',
  'https://www.youtube.com/embed/iGlGc057CLk', 
  'https://www.youtube.com/embed/MfsfseVRZOQ', 
- 'https://www.youtube.com/embed/Q6MiwSun4L4'];
+ 'https://www.youtube.com/embed/Q6MiwSun4L4',
+ 'https://www.youtube.com/embed/RqLd5O5yBLQ', 
+ 'https://www.youtube.com/embed/xiohfyQsZxc', 
+ 'https://www.youtube.com/embed/ag3RnEaB3zM',
+ 'https://www.youtube.com/embed/R1vskiVDwl4', 
+ 'https://www.youtube.com/embed/-vZXgApsPCQ', 
+ 'https://www.youtube.com/embed/IZRzkAw-Fz8',
+ 'https://www.youtube.com/embed/Wo-C-jgA4Y8', 
+ 'https://www.youtube.com/embed/R3KeD06ti6c', 
+ 'https://www.youtube.com/embed/yoa0eIuWcsg'];
 
 function numRandom(){
 
