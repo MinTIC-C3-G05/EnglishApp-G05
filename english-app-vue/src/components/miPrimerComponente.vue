@@ -1,12 +1,11 @@
 <template>
- 
-<H1>Archivo HelloWorld</H1>
+<h2>Mi primer componente</h2>
 
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'primerComponente',
   props: {
     msg: String
   },
@@ -20,3 +19,4 @@ export default {
 
 
 <style></style>
+
