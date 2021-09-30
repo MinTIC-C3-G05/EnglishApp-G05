@@ -25,8 +25,8 @@
         <button class="button btn-primary EnglishTest" Onclick="location.href='EnglishLevelTest_p1.html'">ENGLISH TEST
         </button>
       </div>
-      <div class="col-sm-3 col-md-3 foto" style="margin: 25px;">
-        <img src="img/CLIK_PROF_LOGO.png" alt="Logo picture" class=" rounded img-fluid">
+      <div class="col-sm-3 col-md-3 foto" style="margin: 25px; left: 14%">
+        <img src="@/assets/CLIK_PROF_LOGO.png" alt="Logo picture" class=" rounded img-fluid">
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@
     <div class="col-12">
       <div class="card-group">
         <div class="card bg-light">
-          <img src="img/Image-1.jpg" class="card-img-top" alt="...">
+          <img src="@/assets/Image-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
 
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="card bg-light">
-          <img src="img/Image-2.png" class="card-img-top" alt="...">
+          <img src="@/assets/Image-2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Lorem perferendis illo.</h5>
 
@@ -62,7 +62,7 @@
           </div>
         </div>
         <div class="card bg-light">
-          <img src="img/Image-3.png" class="card-img-top" alt="...">
+          <img src="@/assets/Image-3.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum temporibus tempore
