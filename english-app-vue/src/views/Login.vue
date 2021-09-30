@@ -1,4 +1,5 @@
 <template>
+    <navbar/>
       <div class="navigation">
         <a href="index.html">
             <img src="img/homeIcon.png" alt="home" class="iconos" /> <br />
@@ -71,10 +72,14 @@
 <script>
 // @ is an alias to /src
 
+import Navbar from '@/components/Navbar'
+
 
 export default {
   name: 'Login',
   components: {
+      Navbar
+
     
   }
 }
