@@ -1,17 +1,6 @@
 <template>
     <navbar/>
-      <div class="navigation">
-        <a href="index.html">
-            <img src="img/homeIcon.png" alt="home" class="iconos" /> <br />
-            HOME</a>
-        <a href="signup.html"><img src="img/signupIcon.png" alt="log in" class="iconos" /> <br />
-            SIGN UP</a>
-        <a href="login.html"><img src="img/loginIcon.png" alt="log in" class="iconos" /> <br />
-            LOG IN</a>
-    </div>
-    <div>
-        <p class="prueba">Hello</p>
-    </div>
+     
 
     <div class="general-container">
         <div class="welcomeBack-container">
@@ -23,7 +12,7 @@
             ">
                     LOG IN
                 </h1>
-                <img src="img/CLIK_PROF_LOGO.png" alt="logo" style="height: 150px" />
+                <img src="@/assets/CLIK_PROF_LOGO.png" alt="logo" style="height: 150px" />
             </div>
         </div>
 
@@ -47,7 +36,7 @@
                     OR...
                 </h5>
                 <button class="google">
-                    <img src="img/google-logo.png" alt="" style="height: 30px" />
+                    <img src="@/assets/google-logo.png" alt="" style="height: 30px" />
                     <h3 style="background-color: #1a1d53; color: white">
                         CONTINUE WITH GOOGLE
                     </h3>
@@ -67,18 +56,22 @@
             </button>
         </div>
     </div>
+    <piePagina/>
+
 </template>
 
 <script>
 // @ is an alias to /src
 
 import Navbar from '@/components/Navbar'
+import PiePagina from '@/components/PiePagina'
 
 
 export default {
   name: 'Login',
   components: {
-      Navbar
+      Navbar,
+      PiePagina
 
     
   }
