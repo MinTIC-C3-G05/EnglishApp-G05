@@ -2,17 +2,12 @@
 <div id="app">
   <div id="nav">
     <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <router-link to="/SignUp">Sign Up</router-link>
     <router-link to="/login">Login</router-link>
   </div>
   <router-view/>
   </div>
     
-  
-
-  
-    
-  
 </template>
 
 
@@ -20,15 +15,10 @@
 
 
 
-
-
-
 export default{
   name: 'App',
   components:{
   
-    
- 
   }
 }
 </script>
@@ -36,5 +26,8 @@ export default{
 
 
 <style>
-
+#nav{
+  background-color: rgba(0, 0, 0, 0.335);
+  color: white;
+}
 </style>
