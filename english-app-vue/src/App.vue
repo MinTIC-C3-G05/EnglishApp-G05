@@ -1,24 +1,24 @@
 <template>
 <div id="app">
-  <div id="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/SignUp">Sign Up</router-link>
-    <router-link to="/login">Login</router-link>
-
-  </div>
+  <navbar/>
   <router-view/>
-  </div>
-    
+  <pie-pagina/>
+</div>
+
 </template>
 
 
 <script>
+import Navbar from './components/Navbar.vue'
+import PiePagina from './components/PiePagina.vue'
 
 
 
 export default{
   name: 'App',
   components:{
+    Navbar,
+    PiePagina
   
   }
 }

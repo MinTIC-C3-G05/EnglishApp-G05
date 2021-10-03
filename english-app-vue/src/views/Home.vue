@@ -1,8 +1,4 @@
 <template>
-  <!-- NAVBAR -->
-  <navbar/>
-  <!-- FIN DE NAVBAR -->
-
 
 <!-- TITULO -->
   <section class="container" style="text-align: center; margin-top: 15px;">
@@ -22,7 +18,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maiores perspiciatis iure assumenda aliquam
           repudiandae sequi illum fuga, minus itaque culpa placeat dolores, corporis blanditiis. Commodi rerum fugit vel
           quaerat. </p>
-        <button class="button btn-primary EnglishTest" Onclick="location.href='EnglishLevelTest_p1.html'">ENGLISH TEST
+        <button class="button btn-primary EnglishTest" Onclick="location.href='/Test'">ENGLISH TEST
         </button>
       </div>
       <div class="col-sm-3 col-md-3 foto" style="margin: 25px; left: 14%">
@@ -158,25 +154,14 @@
   </div>
   <!--Section: Contact v.2-->
 
-
-
-
-<!-- PIE DE PAGINA -->
-  <piePagina/>
-  <!-- FIN DE PIE DE PAGINA -->
-
 </template>
 
 <script>
 // @ is an alias to /src
-import Navbar from '@/components/Navbar'
-import PiePagina from '@/components/PiePagina'
 
 export default {
   name: 'Home',
   components: {
-    Navbar,
-    PiePagina
   
   }
 }

@@ -9,13 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="signup.html">Sign up</a>
+          <a class="nav-link" href="/SignUp">Sign up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.html">Log In</a>
+          <a class="nav-link" href="/Login">Log In</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -23,7 +23,7 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="EnglishLevelTest_p1.html">Diagnostic Test</a>
+            <a class="dropdown-item" href="/Test">Diagnostic Test</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="examenrecomendado.html">Recommended Exam</a>
             <a class="dropdown-item" href="recursos.html">Resources</a>

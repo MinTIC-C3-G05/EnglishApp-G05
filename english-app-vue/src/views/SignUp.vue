@@ -1,5 +1,4 @@
 <template>
-  <navbar></navbar>
 
 
     <div class="general-container">
@@ -38,21 +37,15 @@
             <button style="background-color: white;box-shadow: 5px 10px #888888;">Log in</button>
         </div>
    </div>
-
-  <piePagina/>
 </template>
 
 
 <script>
 // @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
-import PiePagina from '@/components/PiePagina.vue'
 
 export default {
   name: 'SignUp',
   components: {
-    Navbar,
-    PiePagina
   }
 }
 </script>

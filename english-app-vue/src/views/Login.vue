@@ -1,6 +1,4 @@
 <template>
-    <navbar/>
-     
 
     <div class="general-container">
         <div class="welcomeBack-container">
@@ -56,22 +54,16 @@
             </button>
         </div>
     </div>
-    <piePagina/>
 
 </template>
 
 <script>
 // @ is an alias to /src
 
-import Navbar from '@/components/Navbar'
-import PiePagina from '@/components/PiePagina'
-
 
 export default {
   name: 'Login',
   components: {
-      Navbar,
-      PiePagina
 
     
   }
