@@ -26,7 +26,7 @@
             <a class="dropdown-item" href="/Test">Diagnostic Test</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="examenrecomendado.html">Recommended Exam</a>
-            <a class="dropdown-item" href="recursos.html">Resources</a>
+            <a class="dropdown-item" href="Resources">Resources</a>
 
             <a class="dropdown-item" href="perfil.html">Results</a>
           </div>
