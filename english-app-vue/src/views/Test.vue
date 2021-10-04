@@ -59,7 +59,7 @@
 const questions = [
   {
     instructions: "Choose the best word to complete the sentence.",
-    question: "The baby boy saw ___ in the mirror and started to cry.",
+    question: "The baby \n boy saw ___ in the mirror and started to cry.",
     choices: ["itself", "himself", "herself"],
     rightAnswer: "himself",
   },
