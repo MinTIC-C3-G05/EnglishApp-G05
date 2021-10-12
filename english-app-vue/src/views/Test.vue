@@ -40,13 +40,13 @@
             <b>Test finished</b> <br><br>
             <div class="container-fluid center">
                 <div class="container-question">
-                    <div class="question ml-sm-5 pl-sm-5 pt-2 h4 text-center">
+                    <div class="question pt-2 h4 text-center">
                     Total score: {{ score() }} / {{ questions.length }} <br><br>
                     You got {{Math.round(score()*100/questions.length)}}% correct answers!<br><br><br>
                     Your English level is <b class="h2">{{level()}}</b><br><br><br>
                     <div class="d-flex justify-content-around pt-3">
-                    <div id="tests"><button type="button" Onclick="location.href='examenrecomendado.html'" class="btn btn-primary btn-lg">Recommended tests</button></div>
-                    <div id="material"><button type="button" Onclick="location.href='recursos.html'" class="btn btn-success btn-lg">Start learning!</button></div>
+                    <div id="tests"><button type="button" Onclick="location.href='Recomend'" class="btn btn-primary btn-lg">Recommended tests</button></div>
+                    <div id="material"><button type="button" Onclick="location.href='Resources'" class="btn btn-success btn-lg">Start learning!</button></div>
                     </div>
                 </div>
                 </div>
@@ -77,13 +77,13 @@ const questions = [
   },
   {
     instructions: "Choose the best word to complete the dialogue.",
-    question: "Jack: I think it’s going to rain. Jill: I ___ , the clouds are clearing. Jack: We’ll soon see.",
+    question: "Jack: I think it’s going to rain. \n Jill: I ___ , the clouds are clearing. \n Jack: We’ll soon see.",
     choices: ["argue", "complain", "disagree"],
     rightAnswer: "disagree",
   },
   {
     instructions: "Choose the best word to complete the dialogue.",
-    question: "Anne: Oh! I watched the new TV show last night. Jo: Was it any good? Anne: Yes. ___ the TV set is so old I could see very little.",
+    question: "Anne: Oh! I watched the new TV show last night. \n Jo: Was it any good? \n Anne: Yes. ___ the TV set is so old I could see very little.",
     choices: ["Mind you", "By the way", "Still"],
     rightAnswer: "By the way",
   },

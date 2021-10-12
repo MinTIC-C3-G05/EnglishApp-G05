@@ -10,14 +10,14 @@
         </div>
        
         <div class="inputs">
-            <form action="" class="form">
+            <form action="" class="form" @submit.prevent="agregarNota()">
                 
 
                 <input type="date"  class="input-login">
                 <br>
-                <input type="email" placeholder="example@example.com" class="input-login">    
-                <input type="password" placeholder="Password" class="input-login"> 
-                <input type="password" placeholder="Confirm password" class="input-login"> 
+                <input type="email" placeholder="example@example.com" class="input-login" v-model="datos.email">    
+                <input type="password" placeholder="Password" class="input-login" v-model="datos.pass"> 
+                <input type="nombre" placeholder="your name" class="input-login" v-model="datos.nombre"> 
                 <br>
                 <br>
                 <br>
@@ -46,7 +46,36 @@
 export default {
   name: 'SignUp',
   components: {
-  }
+  },
+  data() {
+    return {
+      datos: [],
+      mensaje: { color: "success", texto: "" },
+    };
+  },
+
+  created() {
+    this.crearUsuario();
+  },
+
+  methods: {
+    crearUsuario() {
+      this.axios
+        .post("/user/nuevo-usuario", this.datos)
+        .then((res) => {
+          this.datos.push(res.data);
+          this.datos.nombre = "";
+          this.datos.pass = "";
+          this.datos.email = "";
+          this.mensaje.color = "success";
+          this.mensaje.texto = "Usuario creado";
+          this.showAlert();
+        })
+        .catch((e) => {
+          console.log(e.response);
+        });
+    },
+ }
 }
 </script>
 

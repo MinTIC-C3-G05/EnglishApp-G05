@@ -40,7 +40,6 @@
                     </h3>
                 </button>
             </form>
-        </div>
         <div class="sign-up">
             <h4 style="
             background-color: white;
@@ -53,6 +52,7 @@
                 SIGN UP
             </button>
         </div>
+        </div>
     </div>
 
 </template>
@@ -60,14 +60,11 @@
 <script>
 // @ is an alias to /src
 
-
 export default {
-  name: 'Login',
-  components: {
-
-    
-  }
-}
+    name: 'Login',
+    components: {
+    },
+};
 </script>
 
 <style src="../assets/css/login.css"></style>
