@@ -15,10 +15,10 @@
         </div>
 
         <div class="inputs">
-            <form action="" class="form">
-                <input type="email" placeholder="Email" class="input-login" />
+            <form action="" class="form" @submit.prevent="accesoUsuario()" >
+                <input type="email" placeholder="Email" class="input-login" v-model="datos.email" />
                 <br />
-                <input type="password" placeholder="Password" class="input-login" />
+                <input type="password" placeholder="Password" class="input-login" v-model="datos.pass" />
                 <br />
                 <br />
                 <br />
@@ -48,7 +48,7 @@
           ">
                 Don't have an account?
             </h4>
-            <button style="background-color: white; box-shadow: 5px 10px #888888">
+            <button style="background-color: white; box-shadow: 5px 10px #888888" Onclick="location.href='/SignUp'">
                 SIGN UP
             </button>
         </div>
@@ -61,10 +61,35 @@
 // @ is an alias to /src
 
 export default {
-    name: 'Login',
-    components: {
+  name: 'Login',
+  data(){
+    return{
+      mensaje: {color:'', texto: ''},
+      dismissSecs: 5,
+      dismissCountDown: 0,
+      datos: {
+        email:'',
+        pass:'',
+  }
+    }
+  },
+
+  methods: {
+    accesoUsuario() {
+      console.log("se ejecuta la funcion loguear usuario");
+      this.axios
+      .post("/login", this.datos)
+      .then((res) => {
+        console.log(res.data);
+        this.$router.push({path: "/Perfil1"});
+        window.localStorage.setItem('autenticacion', 'ok');
+      })
+      .catch((e) => {
+          console.log(e.response);
+        });
     },
-};
+ }
+}
 </script>
 
 <style src="../assets/css/login.css"></style>

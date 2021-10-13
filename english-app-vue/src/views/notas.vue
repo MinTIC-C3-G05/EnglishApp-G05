@@ -71,6 +71,13 @@
 
 <script>
 export default {
+  name: "notas",
+  beforeCreate(){
+    var autenticacion = window.localStorage.getItem('autenticacion');
+    if (autenticacion !== 'ok'){
+      this.$router.push({path: "/Login"});
+    }
+  },
   data() {
     return {
       notas: [],
