@@ -1,19 +1,22 @@
 <template>
     <div>
-        <h1>NOTAS</h1>
+        <div style="text-align:center; padding-top: 2%">
+          <h1 style="left-padding: 60px">BUSCA TU PERFECTO COMPAÑERO DE ESTUDIO</h1>
+        </div>
+
             <form @submit.prevent="editarNota(notaEditar)" v-if="editar">
-      <h3>Editar nota</h3>
+      <h3>Buscar compañeros de estudio</h3>
 
       <input
         type="text"
         class="form-control my-2"
-        placeholder="Nombre"
+        placeholder="Escribe tu nombre"
         v-model="notaEditar.nombre"
       />
       <input
         type="text"
         class="form-control my-2"
-        placeholder="Descripcion"
+        placeholder="Resultado de tu examen"
         v-model="notaEditar.descripcion"
       />
       <button class="btn-success my-2 mx-2" type="submit">Editar</button>
@@ -22,18 +25,18 @@
       >
     </form>
     <form @submit.prevent="agregarNota()" v-if="!editar">
-      <h3>Agregar una nueva nota</h3>
+      <h3>Agrega tu resultado para buscar posibles compañeros de estudio</h3>
 
       <input
         type="text"
         class="form-control my-2"
-        placeholder="Nombre"
+        placeholder="Escribe tu nombre"
         v-model="nota.nombre"
       />
       <input
         type="text"
         class="form-control my-2"
-        placeholder="Descripcion"
+        placeholder="Resultado de examen"
         v-model="nota.descripcion"
       />
       <button class="btn-success my-2" type="submit">Agregar</button>
@@ -42,8 +45,8 @@
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Nota</th>
-          <th scope="col">Descripcion</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Resultado de examen</th>
           <th scope="col">Acciones</th>
         </tr>
       </thead>
