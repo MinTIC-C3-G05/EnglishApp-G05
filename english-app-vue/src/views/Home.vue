@@ -15,14 +15,15 @@
   <div class="container mt-5 border">
     <div class="row fotoContainer" style="text-align: center">
       <div class="col-xs-12 col-sm-6 col-sm-push-9">
-        <h5 class="text-muted">ENGLISH TEST</h5>
-        <p class="text-dark" style="text-align: justify">
-          We are a company specialized in English language online testing! <br>
+        <h5 class="text-muted" style="margin-top: 5%; font-size: 50px " >ENGLISH TEST</h5>
+        <p class="text-dark" style="text-align: center">
+          We are a company specialized in English language online testing! <br> <br>
           Thanks to the experience we have acquired throughout the time, we can
-          guarantee the correct assessment of a learner's English level.'
+          guarantee the correct assessment of a learner's English level.
         </p>
         <button
           class="button btn-primary EnglishTest"
+          style="padding: 5%; margin-bottom: 15px"
           Onclick="location.href='/Test'"
         >
           ENGLISH TEST
