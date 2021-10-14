@@ -34,7 +34,7 @@
             <a class="dropdown-item" href="Recomend">Recommended Exam</a>
             <a class="dropdown-item" href="Resources">Resources</a>
             <a class="dropdown-item" href="Perfil1">Results</a>
-            <a class="dropdown-item" v-if="autenticacion=='ok'" @click="logout" href="/">Cerrar Sesión</a>
+            <a class="dropdown-item" v-if="autenticacion=='ok'" @click="logout" href="/">Log out</a>
           </div>
         </li>
       </ul>
