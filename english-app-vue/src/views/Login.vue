@@ -62,11 +62,18 @@
 
 export default {
   name: 'Login',
+  beforeCreate(){
+    var autenticacion = window.localStorage.getItem('autenticacion');
+    if (autenticacion == 'ok'){
+      this.$router.push({path: "/Perfil1"});
+    }
+  },
   data(){
     return{
       mensaje: {color:'', texto: ''},
       dismissSecs: 5,
       dismissCountDown: 0,
+      userData:{nombre:'', correo:'', nivel: ''},
       datos: {
         email:'',
         pass:'',
@@ -83,6 +90,7 @@ export default {
         console.log(res.data);
         this.$router.push({path: "/Perfil1"});
         window.localStorage.setItem('autenticacion', 'ok');
+
       })
       .catch((e) => {
           console.log(e.response);

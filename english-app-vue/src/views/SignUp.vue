@@ -45,6 +45,12 @@
 
 export default {
   name: 'SignUp',
+  beforeCreate(){
+    var autenticacion = window.localStorage.getItem('autenticacion');
+    if (autenticacion == 'ok'){
+      this.$router.push({path: "/Perfil1"});
+    }
+  },
   data(){
     return{
       datos: {

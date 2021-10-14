@@ -39,7 +39,7 @@
 <p>Tu Nivel Registrado</p>
 <h2>X</h2>
 
-<button id="boton" Onclick="location.href='/Recursos'" ><a  id="boton1">
+<button id="boton" Onclick="location.href='/Resources'" ><a  id="boton1">
 REPOSITORIO</a>
 </button>
 

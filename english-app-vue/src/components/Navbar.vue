@@ -12,10 +12,10 @@
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/SignUp">Sign up</a>
+          <a class="nav-link" v-if="autenticacion!=='ok'" href="/SignUp">Sign up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Login">Log In</a>
+          <a class="nav-link" v-if="autenticacion!=='ok'" href="/Login">Log In</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/notas">Notas</a>
