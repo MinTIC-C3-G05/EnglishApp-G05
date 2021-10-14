@@ -10,7 +10,7 @@
         </div>
        
         <div class="inputs">
-            <form action="" class="form" @submit.prevent="agregarNota()">
+            <form action="" class="form" @submit.prevent="crearUsuario()">
                 
 
                 <input type="date"  class="input-login">
@@ -34,7 +34,7 @@
         </div>
         <div class="sign-up">
             <h4 style="background-color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Already have an account?</h4>
-            <button style="background-color: white;box-shadow: 5px 10px #888888;">Log in</button>
+            <button style="background-color: white;box-shadow: 5px 10px #888888;" Onclick="location.href='/Login'">Log in</button>
         </div>
    </div>
 </template>
@@ -45,33 +45,28 @@
 
 export default {
   name: 'SignUp',
-  components: {
-  },
-  data() {
-    return {
-      datos: [],
-      mensaje: { color: "success", texto: "" },
-    };
+  data(){
+    return{
+      datos: {
+        email:'',
+        pass:'',
+        nombre: '',
+        role: 'USER'
+  }
+    }
   },
 
-  created() {
-    this.crearUsuario();
-  },
 
   methods: {
     crearUsuario() {
+      console.log("se ejecuta la funcion crear usuario");
       this.axios
-        .post("/user/nuevo-usuario", this.datos)
-        .then((res) => {
-          this.datos.push(res.data);
-          this.datos.nombre = "";
-          this.datos.pass = "";
-          this.datos.email = "";
-          this.mensaje.color = "success";
-          this.mensaje.texto = "Usuario creado";
-          this.showAlert();
-        })
-        .catch((e) => {
+      .post("/user/nuevo-usuario", this.datos)
+      .then(res =>{
+        console.log(res.data);
+        this.$router.push({path: "/Login"});
+      })
+      .catch((e) => {
           console.log(e.response);
         });
     },

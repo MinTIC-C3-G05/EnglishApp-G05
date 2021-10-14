@@ -30,8 +30,8 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Recomend">Recommended Exam</a>
             <a class="dropdown-item" href="Resources">Resources</a>
-
             <a class="dropdown-item" href="Perfil1">Results</a>
+            <a class="dropdown-item" v-if="autenticacion=='ok'" @click="logout" href="/">Cerrar Sesión</a>
           </div>
         </li>
       </ul>
@@ -54,10 +54,19 @@ export default {
     msg: String
   },
   data(){
+    var autenticacion = window.localStorage.getItem('autenticacion');
     return{
-      
+      autenticacion
     }
-  }
+  },
+  methods: {
+    logout(){
+      if(this.autenticacion=='ok'){
+        window.localStorage.removeItem('autenticacion')
+      }
+      this.$router.push({path: "/Home"});
+    }
+}
 }
 </script>
 

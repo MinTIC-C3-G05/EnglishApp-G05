@@ -158,6 +158,12 @@
 
 export default {
   name: 'Home',
+  beforeCreate(){
+    var autenticacion = window.localStorage.getItem('autenticacion');
+    if (autenticacion !== 'ok'){
+      this.$router.push({path: "/Login"});
+    }
+  },
   components: {
   
   }
